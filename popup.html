@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="popup.css" />
+    <title>YouTube Companion</title>
+  </head>
+  <body>
+    <div id="loading-message">Your AI Companion is loading...</div>
+      <div class="chatbox-message-container">
+        <div class="chatbox-message-header">
+          <div class="chatbox-message-profile">
+            <img
+              src="assets/YouTubeLogo.png"
+              alt="YouTube Profile Picture"
+              class="chatbox-message-image"
+            />
+            <div>
+              <h4 class="chatbox-message-name">YouTube Companion</h4>
+            </div>
+          </div>
+          <div class="chatbox-message-settings">
+            <i class='bx bx-cog' ></i>
+          </div>
+        </div>
+        <div class="chatbox-message-content">
+          <h4 class="chatbox-message-no-message">Welcome! I'm here to enhance your video experience. What can I do for you?</h4>
+          <!-- <div class="chatbox-message-item sent">
+            <span class="chatbox-message-item-text"> sent </span>
+            <span class="chatbox-message-item-time">9:30</span>
+          </div>
+          <div class="chatbox-message-item recieved">
+            <span class="chatbox-message-item-text"> recieved </span>
+            <span class="chatbox-message-item-time">9:30</span>
+          </div> -->
+        </div>
+        <div class="chatbox-message-bottom">
+          <form action="#" class="chatbox-message-form">
+            <div
+              contenteditable="true"
+              class="chatbox-message-input"
+              style="min-height: 24px; overflow-y: auto"
+              data-placeholder="Type message..."
+            ></div>
+            <button type="submit" class="chatbox-message-submit">
+              <i class="bx bx-send"></i>
+            </button>
+          </form>
+        </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "AI Youtube Companion",
+  "version": "1.0",
+  "description": "A ChatGPT-powered assistant for YouTube, providing real-time insights and answers based on video content.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/YouTubeIcon.png",
+      "48": "assets/YouTubeIcon.png",
+      "128": "assets/YouTubeIcon.png"
+    }
+  },
+  "icons": {
+    "16": "assets/YouTubeIcon.png",
+    "48": "assets/YouTubeIcon.png",
+    "128": "assets/YouTubeIcon.png"
+  },
+  "options_page": "options.html",
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://api.openai.com/*",
+    "https://ai-youtube-extension-5217a13215ac.herokuapp.com/*"
+  ]
+}
